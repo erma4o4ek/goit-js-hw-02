@@ -1,7 +1,6 @@
 const calculateEngravingPrice = function(message, pricePerWord) {
-  const wordsSplit =  message.split(' ').length;
-  let result = wordsSplit * pricePerWord;
-  return result;
+  const wordsSplit =  message.split(' ').length * pricePerWord;
+  return wordsSplit;
 }
 
 console.log(calculateEngravingPrice('Proin sociis natoque et magnis parturient montes mus', 10)); // 80
